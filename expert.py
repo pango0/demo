@@ -36,7 +36,7 @@ def query_rag(query_text: str, db_path: str):
         model = Ollama(model="jcai/llama3-taide-lx-8b-chat-alpha1:Q4_K_M")
         response_text = model.invoke(prompt)
         formatted_response = f"Response: {response_text}"
-        print("\n"+formatted_response)
+        # print("\n"+formatted_response)
         return response_text
     
 def main():
